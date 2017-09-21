@@ -1,5 +1,4 @@
-require('babel-polyfill');
-require("babel-register");
+import 'babel-register';    
 
 const Koa = require('koa');
 const bodyParser = require('koa-bodyparser');
