@@ -36,10 +36,10 @@ console.log(db.models);
 
 module.exports = User;
 
-// User.sync({ force: true }).then(() => {
-//     return User.create({
-//         username: 'Jon',
-//         nickname: 'lin',
-//         email: 'aa'
-//     });
-// });
+User.sync({ force: true }).then(() => {
+    return User.create({
+        username: 'Jon',
+        nickname: 'lin',
+        email: 'aa'
+    });
+});
